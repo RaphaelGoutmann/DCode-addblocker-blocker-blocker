@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DCode Extension",
+  "version": "1.0",
+  "description": "Removes the ad blocker warning message on dcode.fr",
+  "action": {
+    "default_icon": "icon.ico"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.dcode.fr/*"],
+      "js": ["script.js"]
+    }
+  ],
+  
+  "permissions": ["scripting"]
+  
+}
